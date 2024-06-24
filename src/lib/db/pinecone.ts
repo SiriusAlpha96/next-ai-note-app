@@ -11,5 +11,5 @@ const pinecone = new Pinecone({
     apiKey,
 })
 
-export const notesIndex = pinecone.Index("ai-note-app")
+export const notesIndex = pinecone.Index("nextjs-ai-note-app")
 

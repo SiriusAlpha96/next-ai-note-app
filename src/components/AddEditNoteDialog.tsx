@@ -40,7 +40,7 @@ export default function AddEditNoteDialog({open, setOpen, noteToEdit}: AddEditNo
                         ...input
                     })
                 })
-                if(!response) throw Error("Status code: ")
+                if(!response) throw Error("Status code: " )
             }else{
                 const response = await fetch("/api/notes",{
                     method: "POST",
@@ -57,6 +57,7 @@ export default function AddEditNoteDialog({open, setOpen, noteToEdit}: AddEditNo
             alert("Something went wrong. Please try again.")
 
         }
+        
     }
 
     async function deleteNote(){
